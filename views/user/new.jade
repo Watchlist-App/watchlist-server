@@ -1,0 +1,14 @@
+extends ../layout
+
+block body
+  .container
+    .jumbotron(style="")
+      form.form-signin(action="create", method="POST")
+        h2.form-signin-heading create account
+        input.form-control(type="text", placeholder="Your name", name="name")
+        input.form-control(type="text", placeholder="your email", name="email")
+        .form-group
+          input#password.form-control(type="password", placeholder="password", name="password")
+          input#confirmation.form-control(type="password", placeholder="password confirmation", name="confirmation")
+        input.btn.btn-lg.btn-primary.btn-block(type="submit", value="create account")
+        input(type="hidden", name="_csrf", value=_csrf)
