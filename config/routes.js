@@ -33,7 +33,8 @@ module.exports.routes = {
   // 
   // (This would also work if you had a file at: `/views/home.ejs`)
   '/': {
-    view: 'static/index'
+    view: 'static/index',
+    cors: true
   }
 
   /*
