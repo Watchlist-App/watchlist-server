@@ -9,13 +9,16 @@
  * For more information on configuring the session, check out:
  * http://sailsjs.org/#documentation
  */
+var redisCloudURL = process.env.REDISCLOUD_URL;
+var redisCloudPassword = process.env.REDISCLOUD_PASSWORD;
+var redisCloudPort = process.env.REDISCLOUD_PORT;
 
 module.exports.session = {
 
   // Session secret is automatically generated when your new app is created
   // Replace at your own risk in production-- you will invalidate the cookies of your users,
   // forcing them to log in again. 
-  secret: 'db275426e0ef027687f10a2a1a6007b4'
+  secret: 'db275426e0ef027687f10a2a1a6007b4',
 
 
   // In production, uncomment the following lines to set up a shared redis session store
@@ -26,12 +29,12 @@ module.exports.session = {
   // on localhost is expected.
   // Read more about options at: https://github.com/visionmedia/connect-redis
   //
-  // host: 'localhost',
-  // port: 6379,
-  // ttl: <redis session TTL in seconds>,
-  // db: 0,
-  // pass: <redis auth password>
-  // prefix: 'sess:'
+  host: redisCloudURL,
+  port: redisCloudPort,
+  ttl: 3600,
+  db: 0,
+  pass: redisCloudPassword,
+  prefix: 'sess:'
 
 
   // Uncomment the following lines to use your Mongo adapter as a session store
