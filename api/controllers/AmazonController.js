@@ -23,7 +23,8 @@ module.exports = {
       'Keywords': title,
       'ResponseGroup': 'ItemAttributes,Offers, Images'
     }, function(results) {
-      return res.send(results);
+      var items = results.ItemSearchResponse.Items[0].Item;
+      return res.send(items);
     });
 
   },
