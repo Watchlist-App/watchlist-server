@@ -9,6 +9,7 @@
         "sails-disk": "~0.9.0",
         "sails-mongo": "~0.9.5",
         "ejs": "0.8.4",
+        "apac": "~0.0.13",
         "optimist": "0.3.4",
         "then-jade": "~1.1.0"
     },
