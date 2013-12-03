@@ -10,6 +10,7 @@ module.exports = {
       if (err) return res.send(err,500);
 
       if (!user) return res.send("User does not exist", 404);
+      if (!user[0]) return res.send("User does not exist", 404);
       if (!user[0].lists) return res.send("User does not exist", 404);
 
       for (var index in user[0].lists){
