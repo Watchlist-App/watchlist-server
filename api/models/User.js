@@ -24,6 +24,10 @@ module.exports = {
       minLength: 4
     },
 
+    address: {
+      type: 'string'
+    },
+
     lists: {
       type: 'array',
       defaultsTo:[
