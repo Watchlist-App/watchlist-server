@@ -1,5 +1,7 @@
 Watchlist server
 ================
+[![Dependency Status](https://gemnasium.com/Watchlist-App/watchlist-server.png)](https://gemnasium.com/Watchlist-App/watchlist-server) [![Build Status](https://travis-ci.org/Watchlist-App/watchlist-server.png?branch=master)](https://travis-ci.org/Watchlist-App/watchlist-server)
+
 Restful API built with [Node.js](http://nodejs.org), [Sails](http://sailsjs.org), [Express.js](http://expressjs.com) and [MongoDB](http://www.mongodb.org).  
 Currently hosted on [heroku](http://watchlist-app-server.herokuapp.com/#/).  
 Database is hosted on [mongolab](https://mongolab.com/welcome/).  
