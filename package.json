@@ -1,17 +1,17 @@
 {
   "name": "Watchlist-server",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Watchlist app server",
   "dependencies": {
-    "sails": "0.9.8",
-    "grunt": "0.4.2",
-    "sails-disk": "~0.9.0",
-    "sails-mongo": "~0.9.5",
-    "ejs": "0.8.5",
-    "optimist": "0.6.0",
-    "then-jade": "~1.1.0",
-    "amazon-product-api": "0.0.4"
+    "sails": ">=0.9.8",
+    "grunt": ">=0.4.2",
+    "sails-disk": ">=0.9.0",
+    "sails-mongo": ">=0.9.5",
+    "ejs": ">=0.8.5",
+    "optimist": ">=0.6.0",
+    "then-jade": ">=1.1.0",
+    "amazon-product-api": ">=0.0.4"
   },
   "scripts": {
     "start": "node app.js",
